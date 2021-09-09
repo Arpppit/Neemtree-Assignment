@@ -21,9 +21,9 @@ app.listen(port, function() {
   app.use(fileUpload());
 
  
-  // app.get('/', (req, res) => {
-  //   res.send('Hello World')
-  // })
+  app.get('/', (req, res) => {
+    res.send('<h1> This is page is served from backend server. As assignment requires logical separation thus Front-end is hosted at Port 3000  </h1>')
+  })
   
   //THIS FUNCTIONS READS FROM EXCEL FILE SAVED IN /STATIC AND WRITES IT ON DATABASE 
    async function saveToDb(fname){
